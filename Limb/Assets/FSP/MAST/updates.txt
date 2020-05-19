@@ -1,0 +1,137 @@
+MAST Revision Log:
+
+----------------------------------------------------------
+10/29/2019 - Version 1.1
+----------------------------------------------------------
+- Changes and Additions:
+
+    - While in Scene view:  Shift + Mouse Scrollwheel
+      now cycles through all prefabs in the palette.
+
+
+- Bug Fixes:
+
+    - Fixed MAST interface persistence/state issues
+      when going fullscreen or running the game
+        - Prefab palette is now saved to PNG in the
+          Mast/etc/temp folder
+        - Selected draw tool, selected prefab, and grid
+          visibility are saved to a scriptable object
+
+    - Lag issues when going fullscreen or running game
+      are greatly reduced.
+
+
+- Miscellaneous:
+
+    - Category ID added to the MAST Prefab Component
+      script to be used in upcoming features.
+
+----------------------------------------------------------
+11/8/2019 - Version 1.2
+----------------------------------------------------------
+- Changes and Additions:
+
+    - Added scaling option (0.5 - 1.0) for MAST GUI
+      buttons located in Settings under the GUI tab
+
+    - Added tooltips to Draw Single, Draw Continuous,
+      Paint Area, Randomizer, and Eraser
+
+    - Replaced each method that loaded from the selected
+      folder, with a folder select dialog window
+
+    - Grid Unit Size has been split into x/z and y, and
+      renamed to "XZ Unit Size" and "Y Unit Size"
+
+    - Randomizer Changes:
+
+        - Added "replaceable" to the MAST Component Script
+            - Randomly replaces currently selected prefab
+              with another in the same category
+
+        - Replaced rotate x, y, and z bools with x, y,
+          and z floats
+            - Set to zero for no rotation, otherwise it
+              will use the value as a rotation factor/step
+                - (ie. A value of 45 randomly chooses
+                   0, 45, 90, 135, 180, 225, 270, or 315)
+
+    - Removed custom inspector for MAST prefab component
+      scripts
+        - It was not allowing the same value to be
+          modified over multiple prefabs at the same time
+        - Formatted the actual MAST prefab component
+          script to have headers and spacing
+
+    - Renamed and rearranged MAST scripts in an attempt
+      to apply some logic to a chaotic situation
+
+
+- Bug Fixes:
+
+    - MAST no longer causes project build errors
+
+    - Palette no longer loses the column count when
+      returning from fullscreen or playing
+
+    - Snapshot Camera now pulls back properly to take
+      pictures of prefabs without colliders
+
+    - Eraser tool no longer deletes the top parent
+      GameObject if the prefab parent contains a collider
+      
+----------------------------------------------------------
+3/22/2020 - Version 1.3
+----------------------------------------------------------
+
+- Changes and Additions:
+
+    - Replaced the old prefab creator.  The new creator
+      has its own window and breaks the process into
+      several steps.  This allows materials to be managed
+      before the prefabs are ever created.  Also fixed
+      all known bugs in it.  Tested with models in OBJ
+      and FBX formats created in several modeling tools.
+    
+    - Created a grid that doesn't react badly with post
+      -processing effects.  The tint can be customized
+      in MAST Settings under the GUI tab.
+    
+    - Removed transparency from the visualizer.  It was
+      causing issues with custom shaders.
+
+- Bug Fixes:
+
+    - Paint Area tool
+        - Height was incorrectly using the XZ Unit Size.
+          Corrected this to use the Y Unit Size.
+        - Paint Area x/z was hardcoded to 1f.  Updated
+          this to use the XZ Unit Size.
+    
+    - Placement
+        - Prefab link is no longer broken when placing
+          prefabs with MAST.  This way, any changes to
+          to the main prefab will change all instances
+          of that prefab in the scene.
+          (Thanks Jushiip for the fix!)
+    
+    - Hotkeys
+        - Hotkeys will no longer be triggered twice or
+          more times after going to fullscreen and back.
+          This was causing the grid to move by multiple
+          units and rotations to skip steps.
+          (Thanks DustedHam for the fix!)
+    
+    - Thumbnail Generation
+        - Transparent materials were not being rendered.
+          Changed the background to a 25% transparency
+          so they show up somewhat and still allow the
+          selection background to be visible.
+    
+    - Merge Meshes tool
+        - Now properly combines/merges meshes containing
+          submeshes with different materials.  The final
+          GameObject contains a single mesh with all
+          materials merged.  Anything flagged to exclude
+          from the merge will still be added separately.
