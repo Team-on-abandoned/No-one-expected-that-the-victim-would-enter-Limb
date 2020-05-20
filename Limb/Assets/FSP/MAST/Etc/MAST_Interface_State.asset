@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5fd28d118e3f54681cbd57341ebc04, type: 3}
+  m_Name: MAST_Interface_State
+  m_EditorClassIdentifier: 
+  gridExists: 0
+  selectedDrawToolIndex: -1
+  selectedItemIndex: -1
+  lastPrefabPath: C:/Users/keith/OneDrive/Documents/Unity/MAST Sandbox/Assets/FSP/Modular
+    Pixel Forest/Prefabs
+  prefabs:
+  - {fileID: 5045199036645923784, guid: c70006ee16069114399db5f1f7889e82, type: 3}
+  - {fileID: 6531677457134698195, guid: a121adfb056028f4ea4e57088a3b1a07, type: 3}
+  - {fileID: 4226847461881459738, guid: 420a9f6509f36d04fab1cc3040fb2f14, type: 3}
+  - {fileID: 408752803656416606, guid: 8306ed7c66ad5e945b69430dc5b54d4e, type: 3}
+  - {fileID: 917242367323478911, guid: 9b4f215267210bb4d8937502ec203a9a, type: 3}
+  - {fileID: 7687426501126211220, guid: 760c93a24697e2642a7ebadb7d8689b3, type: 3}
+  - {fileID: 4407892892661387435, guid: c1023bfee95d37e45b1b4e76b2c52de5, type: 3}
+  - {fileID: 7813048343875845901, guid: fdf2704ed36cc7b4f9d51286845159f1, type: 3}
+  - {fileID: 5274195132925885968, guid: c5578f631e1a92348ac26dc5a2000bd8, type: 3}
+  - {fileID: 613657956443016624, guid: c9217184562cf144b96d5424bdc64075, type: 3}
+  - {fileID: 6443822423983640682, guid: de2f6f1e0b9bdd94d9305272fcec5814, type: 3}
+  - {fileID: 1489787156175552605, guid: 74bd6bec0ac652249a092182085c58a1, type: 3}
+  - {fileID: 3605833883444175725, guid: 7e703d06349869d4f959fc1f31561493, type: 3}
+  - {fileID: 735331743089195489, guid: 6f0177f46afd5154dbe97f64ff0efd59, type: 3}
+  - {fileID: 4620894544951422208, guid: 32cf48fe05cf9c847835e99f95ecce2d, type: 3}
+  - {fileID: 5346886858114488291, guid: 14e1a1b2069718a41b11336d66dd5753, type: 3}
+  - {fileID: 1501705997932777885, guid: d75e525efec133341aa944a6645e428c, type: 3}
+  - {fileID: 6985343573754516486, guid: 00f26b058a720744ba70b0cbc47c7881, type: 3}
+  - {fileID: 167849078650167251, guid: 16edf3950282f3345a869e33ba82bece, type: 3}
+  - {fileID: 5070756294338360213, guid: 78df12ea39d02a248b6476258fe77862, type: 3}
+  - {fileID: 6829208546801348274, guid: dfad0eb5cf819844b8ca1e1e99a5730f, type: 3}
+  paletteItemTooltip:
+  - crate
+  - 'dirt
+
+    block'
+  - 'dirt
+
+    inner'
+  - 'dirt
+
+    ramp'
+  - 'fence
+
+    post'
+  - 'fence
+
+    rails'
+  - 'fence
+
+    ramp'
+  - 'grass
+
+    block'
+  - 'grass
+
+    ramp'
+  - 'help
+
+    sign'
+  - 'square
+
+    rock'
+  - 'temple
+
+    block'
+  - 'temple
+
+    block
+
+    inner'
+  - 'temple
+
+    pillar
+
+    base'
+  - 'temple
+
+    pillar
+
+    monkey'
+  - 'temple
+
+    pillar
+
+    snake'
+  - 'temple
+
+    pillar
+
+    standard'
+  - 'temple
+
+    pillar
+
+    top'
+  - 'temple
+
+    steps'
+  - 'tree
+
+    1'
+  - water
+  columnCount: 3
