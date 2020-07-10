@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridExists: 0
   selectedDrawToolIndex: 0
-  selectedItemIndex: 154
+  selectedItemIndex: -1
   lastPrefabPath: D:/repo/No-one-expect-that-the-victim-will-enter-Limb/Limb/Assets/FSP/Modular
     Temple
   prefabs:
